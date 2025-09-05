@@ -1,0 +1,161 @@
+/* Reset */
+* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: #000;
+    color: #fff;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 15vw;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.sidebar > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    margin: auto 0;
+}
+
+.menu-btn {
+    justify-content: center;
+    width: 80%; 
+    height: 50px;
+    margin: 10px auto;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background: none;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+}
+
+.menu-btn:hover {
+    background: #444;
+}
+
+.logout {
+    margin-top: 20px;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+
+.form-container {
+    background-color: #222;
+    padding: 30px 25px;
+    border-radius: 15px;
+    width: 320px;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.form-container h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-container p {
+    font-size: 14px;
+    color: #bbb;
+    margin-bottom: 20px;
+}
+
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 25px;
+    border: 1px solid #555;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+}
+
+form input::placeholder {
+    color: #999;
+}
+
+.btn-proximo {
+    width: 120px;
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    background-color: #666;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-proximo:hover {
+    background-color: #888;
+}
+
+
+.divider {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #888;
+}
+
+.btn-google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    border: 1px solid #555;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-google img.google-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.btn-google:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.02);
+}
